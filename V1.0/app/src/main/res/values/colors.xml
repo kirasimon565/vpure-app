@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A84FF</color>
+    <color name="colorPrimaryDark">#0A84FF</color>
+    <color name="colorAccent">#1A1A1A</color>
+    <color name="background">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="incoming_bubble">#1A1A1A</color>
+    <color name="outgoing_bubble">#0A84FF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#BDBDBD</color>
+    <color name="text_hint">#808080</color>
+</resources>

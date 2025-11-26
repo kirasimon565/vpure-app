@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# ------------------------------------------------------------
+# Gradle wrapper launcher script for UNIX-like systems
+# ------------------------------------------------------------
+
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+JAVA_HOME=${JAVA_HOME:-$(dirname $(dirname $(readlink -f "$(which java)")))}
+
+exec "$JAVA_HOME/bin/java" \
+  -classpath "$DIR/gradle/wrapper/gradle-wrapper.jar" \
+  org.gradle.wrapper.GradleWrapperMain "$@"

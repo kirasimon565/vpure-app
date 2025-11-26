@@ -1,0 +1,40 @@
+{
+  "name": "vpure-backend",
+  "version": "1.0.0",
+  "description": "Backend for V-Pure chat application",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "ts-node src/db/migrate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@fastify/jwt": "^6.7.1",
+    "@fastify/websocket": "^7.1.0",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^16.6.1",
+    "drizzle-orm": "^0.44.7",
+    "fastify": "^4.29.1",
+    "fastify-jwt": "^4.1.3",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.16.3",
+    "zod": "^3.20.6",
+    "zod-to-json-schema": "^3.20.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.14.0",
+    "@types/pg": "^8.6.6",
+    "@types/ws": "^8.5.4",
+    "drizzle-kit": "^0.31.7",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
